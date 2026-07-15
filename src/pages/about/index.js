@@ -10,7 +10,7 @@ import {
   services,
 } from "../../content_option";
 
-export const About = () => {
+export const About = ( => {
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -40,7 +40,7 @@ export const About = () => {
           </Col>
         </Row>
 
-        <Row className=" sec_sp">
+        <Row className=" sec_sp"
           <Col lg="5">   <h3 className="color_sec py-4">Work Timline</h3> </Col>
           <Col lg="7">   <table className="table caption-top">
 <tbody>
@@ -52,7 +52,7 @@ export const About = () => {
           
        </tr>
                   );
-                })}
+                }}
               </tbody>
             </table>
           </Col>
@@ -76,7 +76,7 @@ export const About = () => {
                         width: `${data.value}%`,
                       }}
                     >
-                      <div className="progress-value">{data.value}%</div>
+                      <div className="progress-value">{data.value}%</div
                     </div>
                   </div>
               </div>
@@ -97,7 +97,7 @@ export const About = () => {
                 </div>
               );
             })}
-          </Col>
+          </Col
         </Row>
       </Container>
     </HelmetProvider>
