@@ -10,7 +10,7 @@ import {
   services,
 } from "../../content_option";
 
-export const About = ( => {
+export const About = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -40,21 +40,30 @@ export const About = ( => {
           </Col>
         </Row>
 
-        <Row className=" sec_sp"
-          <Col lg="5">   <h3 className="color_sec py-4">Work Timline</h3> </Col>
-          <Col lg="7">   <table className="table caption-top">
-<tbody>
+        <Row className=" sec_sp">
+          <Col lg="5"> 
+            <h3 className="color_sec py-4">Work Timline</h3> 
+            </Col>
+          <Col lg="7"> 
+          <table className="table caption-top">
+  <tbody>
+    {worktimeline.map((data, i) => (
+      <tr key={i}>
+        <th scope="row">{data.jobtitle}</th>
+        <td>{data.where}</td>
+        <td>{data.date}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+<Col lg="8">
+    <h3 className="color_sec py-4">cars</h3>
+  </Col>
 
-     {worktimeline.map((data, i) => {
-      return (
-         <tr key={i}>
-       <th scope="row">{data.jobtitle}</th> <td>{data.where}</td> <td>{data.date}</td>
-          
-       </tr>
-                  );
-                }}
-              </tbody>
-            </table>
+<Row className="sec_sp">
+</Row>
+
+            
           </Col>
         </Row>
         
@@ -70,13 +79,9 @@ export const About = ( => {
             <div key={i}>
                       <h3 className="progress-title">{data.name}</h3>
                           <div className="progress">
-                         <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div
+                         <div className="progress-bar" style={{width: `${data.value}%`, }} >
+                          
+                      <div className="progress-value">{data.value}%</div>
                     </div>
                   </div>
               </div>
@@ -97,9 +102,10 @@ export const About = ( => {
                 </div>
               );
             })}
-          </Col
+          </Col>
         </Row>
       </Container>
     </HelmetProvider>
+   
   );
 };
