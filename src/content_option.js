@@ -90,9 +90,9 @@ const contactConfig = {
         "Thank you for visiting my portfolio. If you'd like to discuss a project, collaborate, or just say hello, feel free to get in touch.",
         
     // EmailJS configuration
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_xcbemmn",
+    YOUR_TEMPLATE_ID: "template_dxjbm7w",
+    YOUR_USER_ID: "0stvOJSSCkI_ov45x",
 };
 const socialprofils = {
     github: "https://github.com/mohsinshhzad88-sudo",

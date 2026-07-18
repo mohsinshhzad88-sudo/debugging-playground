@@ -35,15 +35,20 @@ export const ContactUs = () => {
         templateParams,
         contactConfig.YOUR_USER_ID
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormdata({
-            loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
-            variant: "success",
-            show: true,
-          });
+     .then(
+  (result) => {
+    console.log(result.text);
+
+    setFormdata({
+      email: "",
+      name: "",
+      message: "",
+      loading: false,
+      show: true,
+      alertmessage: "SUCCESS! Thank you for your message.",
+      variant: "success",
+    });
+  
         },
         (error) => {
           console.log(error.text);
