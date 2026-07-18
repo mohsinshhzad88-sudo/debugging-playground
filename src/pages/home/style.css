@@ -44,15 +44,41 @@ section {
     }
 }
 
-.intro_sec .text,
-.intro_sec .h_bg-image {
-    width: 50%;
+.intro_sec .text {
+    width: 55%;
+}
+
+.intro_sec .hero_media {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 2rem;
+}
+
+.intro_sec .hero_image {
+    width: min(100%, 420px);
+    max-height: 520px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width:991.98px) {
     .intro_sec .text,
-    .intro_sec .h_bg-image {
+    .intro_sec .hero_media {
         width: 100%;
+    }
+
+    .intro_sec .hero_media {
+        padding: 1.25rem 1.25rem 0;
+    }
+
+    .intro_sec .hero_image {
+        width: 100%;
+        max-width: 420px;
+        max-height: 360px;
     }
 }
 

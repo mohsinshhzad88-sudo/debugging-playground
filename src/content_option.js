@@ -15,136 +15,85 @@ const introdata = {
     your_img_url:  "/Mohsin.jpeg"};
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "About my self",
+    aboutme: "I'm a Computer Science student interested in web development. I enjoy learning new technologies and building projects to improve my skills.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
+const worktimeline = [
+  {
+    jobtitle: "BS Computer Science Student",
+    where: "The University of Faisalabad",
+    date: "2023 - Present",
+  },
+  {
+    jobtitle: "Learning React & Web Development",
+    where: "Personal Projects",
+    date: "2025 - Present",
+  },
+  {
+    jobtitle: "Building Portfolio & Practice Projects",
+    where: "GitHub",
+    date: "2026",
+  },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 100,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
+const skills = [
+  {
+    name: "HTML",
+    value: 90,
+  },
+  {
+    name: "CSS",
+    value: 85,
+  },
+  {
+    name: "JavaScript",
+    value: 75,
+  },
+  {
+    name: "React",
+    value: 65,
+  },
+  {
+    name: "Git & GitHub",
+    value: 70,
+  },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
+const services = [
+  {
+    title: "Web Development",
+    description: "Building responsive and user-friendly websites using HTML, CSS, JavaScript, and React.",
+    service_id:1
+  },
+  {
+    title: "Frontend Development",
+    description: "Creating clean and interactive user interfaces with modern web technologies.",
+    service_id:2
+  },
+  {
+    title: "Learning & Projects",
+    description: "Continuously learning new technologies and building projects to improve my development skills.",
+    service_id:3
+  },
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-];
+    img: "/bridge.jpg",
+      title: "I’m Mohsin Shahzad",
+    description: "Welcome to my portfolio! Here you'll find projects I've built while learning and improving my skills in React, JavaScript, and modern web development. Each project reflects my growth as a developer."
+}];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+    YOUR_EMAIL: "mohsinshahzad2015@gmail.com", // Replace with your email
+    YOUR_FONE: "+92 3011710011",      // Replace with your phone number
+    description:
+        "Thank you for visiting my portfolio. If you'd like to discuss a project, collaborate, or just say hello, feel free to get in touch.",
+        
+    // EmailJS configuration
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",
     YOUR_USER_ID: "user_id",
 };
-
 const socialprofils = {
     github: "https://github.com/mohsinshhzad88-sudo",
     facebook: "https://facebook.com",

@@ -56,9 +56,7 @@ export const About = () => {
     ))}
   </tbody>
 </table>
-<Col lg="8">
-    <h3 className="color_sec py-4">cars</h3>
-  </Col>
+
 
 <Row className="sec_sp">
 </Row>
