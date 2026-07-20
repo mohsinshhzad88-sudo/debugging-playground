@@ -77,11 +77,15 @@ const services = [
   },
 ];
 
-const dataportfolio = [{
+const dataportfolio = [
+  {
     img: "/bridge.jpg",
-      title: "I’m Mohsin Shahzad",
-    description: "Welcome to my portfolio! Here you'll find projects I've built while learning and improving my skills in React, JavaScript, and modern web development. Each project reflects my growth as a developer."
-}];
+    title: "A Bit About Me",
+    description:
+      "I'm Mohsin Shahzad, a Computer Science student passionate about web development. I enjoy building responsive and interactive web applications using React and continuously improving my programming skills through real-world projects.",
+  },
+
+];
 
 const contactConfig = {
     YOUR_EMAIL: "mohsinshahzad2015@gmail.com", // Replace with your email

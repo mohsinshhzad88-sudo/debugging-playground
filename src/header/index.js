@@ -6,7 +6,7 @@ import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState(true);
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -15,7 +15,27 @@ const Headermain = () => {
 
   return (
     <>
-      <header className="fixed-top site__header">
+  <header className="site__header desktop_header">
+
+  <div className="logo">
+    <Link to="/"><b>Mohsin Shahzad</b></Link>
+  </div>
+
+
+  <ul className="desktop_menu">
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/about">About</Link></li>
+    <li><Link to="/portfolio">Portfolio</Link></li>
+    <li><Link to="/contact">Contact</Link></li>
+  </ul>
+
+
+  <button className="menu__button" onClick={handleToggle}>
+    ☰
+  </button>
+
+</header>
+        <header className="fixed-top site__header mobile_header">
         <div className="d-flex align-items-center justify-content-between">
           <Link  className="navbar-brand nav_ac" to="/">
             {logotext}
